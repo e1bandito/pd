@@ -1,7 +1,12 @@
 [
   {
-    "img": "products/1",
-    "alt": "Блокнот Теория относительности и коты",
+    "pic": {
+      "img": "products/1",
+      "alt": "Блокнот Теория относительности и коты",
+      "type": "jpg",
+      "width": 130,
+      "height": 130
+    },
     "title": "Блокнот Теория относительности и коты, серая, S",
     "selectArr": [
       {
@@ -30,8 +35,13 @@
     "id": "1"
   },
   {
-    "img": "products/2",
-    "alt": "Футболка Воздущный шар, 30 Х 45 СМ",
+    "pic": {
+      "img": "products/2",
+      "alt": "Футболка Воздущный шар, 30 Х 45 СМ",
+      "type": "jpg",
+      "width": 130,
+      "height": 130
+    },
     "title": "Футболка Воздущный шар, 30 Х 45 СМ",
     "selectArr": [
       {
@@ -57,8 +67,13 @@
     "id": "2"
   },
   {
-    "img": "products/3",
-    "alt": "Блокнот TOP SECRET, A5, в клетку",
+    "pic": {
+      "img": "products/3",
+      "alt": "Блокнот TOP SECRET, A5, в клетку",
+      "type": "jpg",
+      "width": 130,
+      "height": 130
+    },
     "title": "Блокнот TOP SECRET, A5, в клетку",
     "selectArr": [
       {
@@ -87,8 +102,13 @@
     "id": "3"
   },
   {
-    "img": "products/4",
-    "alt": "Блокнот TOP SECRET, A5, в клетку",
+    "pic": {
+      "img": "products/4",
+      "alt": "Блокнот TOP SECRET, A5, в клетку",
+      "type": "jpg",
+      "width": 130,
+      "height": 130
+    },
     "title": "Блокнот TOP SECRET, A5, в клетку",
     "selectArr": [
       {
@@ -117,8 +137,13 @@
     "id": "4"
   },
   {
-    "img": "products/5",
-    "alt": "Услуга подарочной упаковки",
+    "pic": {
+      "img": "products/5",
+      "alt": "Услуга подарочной упаковки",
+      "type": "jpg",
+      "width": 130,
+      "height": 130
+    },
     "title": "Услуга подарочной упаковки",
     "selectArr": [
       {

@@ -1,8 +1,10 @@
 .cart {
   padding-top: rem(20);
+  margin-bottom: rem(21);
 
   @include min(1024) {
     padding-top: rem(40);
+    margin-bottom: rem(33);
   }
 }
 
@@ -433,6 +435,10 @@
     justify-content: center;
   }
 
+  @include min(1024) {
+    padding: rem(20);
+  }
+
   @include min($xl) {
     display: none;
   }
@@ -505,6 +511,7 @@
   display: none;
   @include clear-button;
   color: $light-text;
+  transition: color 0.3s linear;
   cursor: pointer;
   align-self: center;
   padding: rem(10);

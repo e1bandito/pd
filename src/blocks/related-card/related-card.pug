@@ -1,0 +1,8 @@
+mixin related-card(img, title, price)
+  +b.ARTICLE.related-card
+    +e.image
+      +picture(img)
+    +e.H3.title #{title}
+    +e.SPAN.price #{price}
+      +e.SPAN.currency  &#8381;
+    +btn('В корзину', 'button', 'related-card__btn')

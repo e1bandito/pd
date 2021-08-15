@@ -1,0 +1,61 @@
+.related {
+  @include min(1024) {
+    margin-bottom: rem(80);
+  }
+}
+
+.related__container {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include min(1024) {
+    padding-left: rem(16);
+    padding-right: rem(16);
+  }
+}
+
+.related__title {
+  padding-left: rem(16);
+  padding-right: rem(16);
+  margin: 0 0 rem(15) 0;
+  font-weight: 600;
+  font-size: rem(17);
+  line-height: lh(17,23);
+  color: $main-text;
+
+  @include min(1024) {
+    padding-right: rem(0);
+    padding-left: rem(0);
+    font-size: rem(21);
+    line-height: 1.3;
+    margin-bottom: rem(26);
+  }
+}
+
+.related__carousel {
+  overflow: hidden;
+  background-color: $white;
+  padding-right: rem(16);
+  padding-left: rem(16);
+  padding-top: rem(24);
+  padding-bottom: rem(64);
+
+  @include min(800) {
+    background-color: transparent;
+    padding-top: 0;
+  }
+
+  @include min(1024) {
+    padding-right: rem(0);
+    padding-left: rem(0);
+    padding-bottom: 0;
+  }
+}
+
+.related__wrapper {
+  display: flex;
+}
+
+.related__slide {
+  flex: none;
+}
