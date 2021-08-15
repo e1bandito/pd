@@ -1,0 +1,76 @@
+.select {
+  min-width: rem(100);
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+
+  @include min(1024) {
+    min-width: rem(90);
+  }
+}
+
+.select__label {
+  display: none;
+  font-weight: 600;
+  font-size: rem(14);
+  line-height: 1.7;
+  margin-bottom: rem(4);
+  color: $light-link;
+  text-transform: uppercase;
+
+  @include min(1024) {
+    display: block;
+  }
+}
+
+.select__inner {
+  position: relative;
+  overflow: hidden;
+  flex: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: rem(42);
+    height: calc(100% - 2px);
+    background-color: $bg-mobile;
+    background-image: url("../img/dropdown.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: rem(12) rem(8);
+    border-radius: 0 rem(4) rem(4) 0;
+    border-left: 1px solid $border-color-2;
+    pointer-events: none;
+  }
+}
+
+.select__field {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: rem(4);
+  padding: rem(6) rem(50) rem(7) rem(10);
+  border: 1px solid $border-color-2;
+  appearance: none;
+  cursor: pointer;
+  text-align-last:center;
+  font-weight: 600;
+  font-size: rem(15);
+  line-height: lh(15, 20);
+  margin: 0;
+
+  &:hover {
+    border-color: $primary-hover;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $primary-hover;
+  }
+
+  &:active {
+    border-color: $primary-hover;
+  }
+}

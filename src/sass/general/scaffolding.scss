@@ -2,11 +2,8 @@
 @include font("Open Sans", open-sans-semi-bold, 600);
 @include font("Open Sans", open-sans-bold, 700);
 
-600, 700, 400
-
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 *,
@@ -20,6 +17,9 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 img {
@@ -49,19 +49,24 @@ a {
 }
 
 .container {
-  max-width: 1380px;
+  max-width: 1315px;
   width: 100%;
   margin: 0 auto;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: rem(16);
+  padding-right: rem(16);
+}
 
-  @include max($xl) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-  @include max($md) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+select::-ms-expand {
+  appearance: none;
+  display: none;
 }

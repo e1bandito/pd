@@ -1,0 +1,106 @@
+.stepper {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: rem(4);
+}
+
+.stepper__inner {
+  height: rem(35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include min(1024) {
+    margin-bottom: rem(4);
+  }
+}
+
+.stepper__label {
+  display: none;
+  font-weight: 600;
+  font-size: rem(14);
+  line-height: 1.7;
+  margin-bottom: rem(4);
+  color: $light-link;
+  text-transform: uppercase;
+
+  @include min(1024) {
+    display: block;
+  }
+}
+
+.stepper__total {
+  display: none;
+  margin: 0;
+  font-weight: 600;
+  font-size: rem(13);
+  line-height: lh(13,18);
+  text-align: center;
+  color: $light-text;
+
+  @include min(1024) {
+    display: block;
+  }
+}
+
+.stepper__field {
+  font-size: rem(15);
+  line-height: lh(15, 20);
+  font-weight: 600;
+  color: $main-text;
+  height: 100%;
+  text-align: center;
+  appearance: none;
+  border: none;
+  box-shadow: none;
+  border-top: 1px solid $border-color-2;
+  border-bottom: 1px solid $border-color-2;
+  padding: rem(7) rem(10);
+  width: rem(46);
+
+  &:focus {
+    outline: none;
+    border-color: $primary-hover;
+  }
+
+  &:active {
+    border-color: $primary-hover;
+  }
+}
+
+.stepper__btn {
+  @include clear-button;
+  width: rem(35);
+  height: rem(35);
+  border: 1px solid $border-color-2;
+  font-weight: 600;
+  font-size: rem(15);
+  line-height: lh(15, 20);
+  color: $main-text;
+  background: $bg-mobile;
+  cursor: pointer;
+  user-select: none;
+
+  &--inc {
+    border-radius: 0 rem(4) rem(4) 0;
+  }
+
+  &--dec {
+    border-radius: rem(4) 0 0 rem(4);
+  }
+
+  &:focus {
+    border-color: $primary-hover;
+  }
+
+  &:active {
+    border-color: $primary-hover;
+  }
+}
+
+.stepper__btn--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

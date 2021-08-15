@@ -1,0 +1,9 @@
+mixin stepper(name, value, id)
+  +b.stepper.js-stepper
+    +e.LABEL.label(for='product-stepper-' + id) Кол-во:
+    +e.inner
+      +e.BUTTON.btn.--dec(type="button") -
+      +e.INPUT.field(name='product-stepper-' + id, value=value, type="number", id='product-stepper-' + id)
+      +e.BUTTON.btn.--inc(type="button") +
+    +e.P.total 1675 &#8381;/шт.
+

@@ -1,0 +1,7 @@
+mixin select(name, arr, id)
+  +b.select
+    +e.LABEL.label(for='product-select-' + id) Размер:
+    +e.inner
+      +e.SELECT.field(name='product-select-' + id, id='product-select-' + id)
+        each option in arr
+          option(value=option.value) #{option.text}

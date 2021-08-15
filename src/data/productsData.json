@@ -1,0 +1,146 @@
+[
+  {
+    "img": "products/1",
+    "alt": "Блокнот Теория относительности и коты",
+    "title": "Блокнот Теория относительности и коты, серая, S",
+    "selectArr": [
+      {
+        "value": 1,
+        "text": 1
+      },
+      {
+        "value": 2,
+        "text": 2
+      },
+      {
+        "value": 3,
+        "text": 3
+      },
+      {
+        "value": 4,
+        "text": 4
+      }
+    ],
+    "price": "10 350",
+    "stock": {
+      "value": "1 550",
+      "percent": "-20%"
+    },
+    "favorites": false,
+    "id": "1"
+  },
+  {
+    "img": "products/2",
+    "alt": "Футболка Воздущный шар, 30 Х 45 СМ",
+    "title": "Футболка Воздущный шар, 30 Х 45 СМ",
+    "selectArr": [
+      {
+        "value": 1,
+        "text": 1
+      },
+      {
+        "value": 2,
+        "text": 2
+      },
+      {
+        "value": 3,
+        "text": 3
+      },
+      {
+        "value": 4,
+        "text": 4
+      }
+    ],
+    "price": "10 350",
+    "stock": false,
+    "favorites": false,
+    "id": "2"
+  },
+  {
+    "img": "products/3",
+    "alt": "Блокнот TOP SECRET, A5, в клетку",
+    "title": "Блокнот TOP SECRET, A5, в клетку",
+    "selectArr": [
+      {
+      "value": 1,
+      "text": 1
+      },
+      {
+        "value": 2,
+        "text": 2
+      },
+      {
+        "value": 3,
+        "text": 3
+      },
+      {
+        "value": 4,
+        "text": 4
+      }
+    ],
+    "price": "108 350",
+    "stock": {
+      "value": "1 550",
+      "percent": "-20%"
+    },
+    "favorites": true,
+    "id": "3"
+  },
+  {
+    "img": "products/4",
+    "alt": "Блокнот TOP SECRET, A5, в клетку",
+    "title": "Блокнот TOP SECRET, A5, в клетку",
+    "selectArr": [
+      {
+        "value": 1,
+        "text": 1
+      },
+      {
+        "value": 2,
+        "text": 2
+      },
+      {
+        "value": 3,
+        "text": 3
+      },
+      {
+        "value": 4,
+        "text": 4
+      }
+    ],
+    "price": "1 008 350",
+    "stock": {
+      "value": "1 550",
+      "percent": "-20%"
+    },
+    "favorites": false,
+    "id": "4"
+  },
+  {
+    "img": "products/5",
+    "alt": "Услуга подарочной упаковки",
+    "title": "Услуга подарочной упаковки",
+    "selectArr": [
+      {
+        "value": 1,
+        "text": 1
+      },
+      {
+        "value": 2,
+        "text": 2
+      },
+      {
+        "value": 3,
+        "text": 3
+      },
+      {
+        "value": 4,
+        "text": 4
+      }
+    ],
+    "price": "1 008 350",
+    "stock": false,
+    "favorites": false,
+    "id": "5"
+  }
+]

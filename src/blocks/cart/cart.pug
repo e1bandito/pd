@@ -1,0 +1,63 @@
+- const productsData = getData('productsData')
+
++b.SECTION.cart
+  +e.container.container
+    +e.header
+      +e.H2.title Моя корзина
+      +e.P.id-text ID корзины: 357253
+    +e.FORM.form
+      +e.UL.products-list
+        each product in productsData
+          +e.LI.products-item
+            +e.product-card
+              +e.product-card-img
+                +picture(product.img, product.alt, 'jpg')
+              +e.product-card-info
+                +e.H3.product-card-title #{product.title}
+                +e.product-card-inner
+                  +e.product-card-wrap.--select
+                    +select(product.id, product.selectArr, product.id)
+                  +e.product-card-wrap.--stepper
+                    +stepper(product.id, 1, product.id)
+                  +e.BUTTON.product-favorites-dsk(type="button")
+                    +icon('favorites')(width="25", height="22")
+                  +e.product-price
+                    +e.P.product-price-value #{product.price}
+                      +e.SPAN.currency  &#8381;
+                    if product.stock
+                      +e.product-stock
+                        +e.SPAN.product-stock-value #{product.stock.value}
+                          +e.SPAN.currency  &#8381;
+                        +e.SPAN.product-stock-percent #{product.stock.percent}
+                  +e.product-controls
+                    if product.favorites
+                      +e.BUTTON.product-btn.--favorites.--selected(type="button") В избранном
+                    else
+                      +e.BUTTON.product-btn.--favorites(type="button") В избранное
+                    +e.BUTTON.product-btn.--delete(type="button") Удалить
+                  +e.BUTTON.product-delete-dsk(type="button")
+                    +icon('cross')(width="17", height="17")
+      +e.total
+        +e.total-inner
+          +e.total-top
+            +e.total-wrap
+              +e.P.total-text Товары
+                +e.SPAN.total-count  (3)
+              +e.P.total-text 1 734 800
+                +e.SPAN.currency  &#8381;
+            +e.total-wrap
+              +e.P.total-text Скидка
+              +e.P.total-text.--stock – 132 000
+                +e.SPAN.currency  &#8381;
+            +e.total-wrap
+              +e.total-code
+                +e.A.code-link(href="#") У меня есть код для скидки
+                +e.SPAN.total-stock-info
+                  +icon('info')(width="17", height="17")
+          +e.total-footer
+            +e.total-res
+              +e.P.total-res-text Итого
+              +e.P.total-res-value 1 602 800
+                +e.SPAN.currency  &#8381;
+            +btn('Оформить заказ', 'submit', '')
+        +e.P.total-note Доступные способы и время доставки можно выбрать при оформлении заказа.
