@@ -1,9 +1,0 @@
-.main {
-  width: 100%;
-  flex: 1 0 auto;
-  background-color: $bg-mobile;
-
-  @include min($desktop) {
-    background-color: $bg;
-  }
-}
